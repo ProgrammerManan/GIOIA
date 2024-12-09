@@ -1,0 +1,176 @@
+<!-- Homepage (index.html) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gioia - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #343a40;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-bottom: 4px solid #4b6043;
+        }
+        header h1 {
+            font-size: 1.5rem;
+            color: #4b6043;
+        }
+        nav a {
+            margin-left: 1rem;
+            text-decoration: none;
+            color: #343a40;
+            font-weight: bold;
+        }
+        nav a:hover, nav a.active {
+            color: #ffffff;
+            background-color: #4b6043;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+        .hero {
+            text-align: center;
+            padding: 2rem;
+            background-image: url('https://via.placeholder.com/1200x400');
+            background-size: cover;
+            background-position: center;
+            color: #ffffff;
+            border-bottom: 6px solid #75975e;
+        }
+        .hero h2 {
+            font-size: 2rem;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.2rem;
+        }
+        .about {
+            padding: 2rem;
+            background-color: #ffffff;
+            text-align: center;
+        }
+        .about h2 {
+            color: #4b6043;
+        }
+        .about p {
+            border: 2px solid #b3cf99;
+            padding: 1rem;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        .image-grid {
+            display: flex;
+            justify-content: space-around;
+            padding: 2rem;
+            background-color: #f8f8f8;
+        }
+        .image-grid div {
+            text-align: center;
+        }
+        .image-grid img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border: 2px solid #4b6043;
+            border-radius: 5px;
+        }
+        .split-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2rem;
+            background-color: #ffffff;
+        }
+        .split-section img {
+            width: 50%;
+            height: auto;
+            border: 2px solid #75975e;
+            border-radius: 5px;
+        }
+        .split-section div {
+            width: 45%;
+        }
+        .reviews {
+            padding: 2rem;
+            background-color: #f1f1f1;
+            text-align: center;
+        }
+        .reviews h2 {
+            color: #4b6043;
+        }
+        .reviews p {
+            margin: 1rem 0;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Gioia</h1>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="get-ideas.html">Get Ideas</a>
+            <a href="inventory.html">Inventory</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Find the Best Deals and Coolest Gifts</h2>
+            <p>Your aesthetic gift guide for every holiday and occasion.</p>
+        </section>
+        <section class="about" id="about">
+            <h2>About Gioia</h2>
+            <p>Gioia combines the best of shopping and inspiration, curating deals and gifts linked directly to products. Filter by holiday, get ideas for everyone, and make your celebrations even more special.</p>
+        </section>
+        <section class="image-grid">
+            <div>
+                <img src="https://via.placeholder.com/200" alt="Placeholder">
+                <h3>Curated Deals</h3>
+                <p>Handpicked offers tailored for every occasion.</p>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/200" alt="Placeholder">
+                <h3>Unique Gifts</h3>
+                <p>Find something special for everyone in your life.</p>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/200" alt="Placeholder">
+                <h3>Hassle-Free Shopping</h3>
+                <p>Seamlessly explore and shop from curated collections.</p>
+            </div>
+        </section>
+        <section class="split-section">
+            <div>
+                <h3>Our Mission</h3>
+                <p>Deliver quality, convenience, and inspiration in one place.</p>
+                <h3>Our Vision</h3>
+                <p>Revolutionize gift shopping for a stress-free experience.</p>
+                <h3>Our Values</h3>
+                <p>Commitment to aesthetics, user experience, and sustainability.</p>
+            </div>
+            <img src="https://via.placeholder.com/400" alt="Placeholder">
+        </section>
+        <section class="reviews">
+            <h2>What People Are Saying</h2>
+            <p>"Gioia has completely changed the way I shop for gifts. It's so easy to find unique items!"</p>
+            <p>"I love the aesthetic and how intuitive the website is. Highly recommend!"</p>
+            <p>"The curated deals section is a lifesaver during the holidays!"</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gioia</p>
+    </footer>
+</body>
+</html>

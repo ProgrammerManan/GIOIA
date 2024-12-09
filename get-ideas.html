@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gioia - Get Ideas</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #343a40;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-bottom: 4px solid #4b6043;
+        }
+        header h1 {
+            font-size: 1.5rem;
+            color: #4b6043;
+        }
+        nav a {
+            margin-left: 1rem;
+            text-decoration: none;
+            color: #343a40;
+            font-weight: bold;
+        }
+        nav a:hover, nav a.active {
+            color: #ffffff;
+            background-color: #4b6043;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+        .ideas-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            padding: 2rem;
+            background-color: #f8f8f8;
+        }
+        .idea-card {
+            width: 300px;
+            background-color: #ffffff;
+            border: 2px solid #75975e;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .idea-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .idea-card h3 {
+            color: #4b6043;
+            margin: 1rem 0 0.5rem;
+        }
+        .idea-card p {
+            padding: 0 1rem 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Gioia</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="get-ideas.html" class="active">Get Ideas</a>
+            <a href="inventory.html">Inventory</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+    </header>
+    <main>
+        <section class="ideas-container">
+            <div class="idea-card">
+                <img src="https://via.placeholder.com/300x200" alt="Placeholder">
+                <h3>For Mom</h3>
+                <p>Thoughtful gifts that will make her smile.</p>
+            </div>
+            <div class="idea-card">
+                <img src="https://via.placeholder.com/300x200" alt="Placeholder">
+                <h3>For Dog</h3>
+                <p>Adorable finds for your furry friend.</p>
+            </div>
+            <div class="idea-card">
+                <img src="https://via.placeholder.com/300x200" alt="Placeholder">
+                <h3>For Dad</h3>
+                <p>Practical and fun gifts he will love.</p>
+            </div>
+            <div class="idea-card">
+                <img src="https://via.placeholder.com/300x200" alt="Placeholder">
+                <h3>For Friends</h3>
+                <p>Unique ideas to cherish your friendships.</p>
+            </div>
+            <div class="idea-card">
+                <img src="https://via.placeholder.com/300x200" alt="Placeholder">
+                <h3>For Kids</h3>
+                <p>Exciting and fun-filled surprises for kids.</p>
+            </div>
+            <div class="idea-card">
+                <img src="https://via.placeholder.com/300x200" alt="Placeholder">
+                <h3>For Couples</h3>
+                <p>Romantic and meaningful gifts for two.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gioia</p>
+    </footer>
+</body>
+</html>
