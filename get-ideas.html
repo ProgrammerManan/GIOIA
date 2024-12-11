@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,6 +55,11 @@
             overflow: hidden;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .idea-card:hover {
+            transform: translateY(-10px);
         }
         .idea-card img {
             width: 100%;
@@ -75,38 +81,50 @@
         <nav>
             <a href="index.html">Home</a>
             <a href="get-ideas.html" class="active">Get Ideas</a>
-            <a href="/backend/index.html">Inventory</a>
+            <a href="inventory.html">Inventory</a>
+            <a href="profile.html">Profile</a>
         </nav>
     </header>
     <main>
         <section class="ideas-container">
-            <div class="idea-card">
-                <img src="https://via.placeholder.com/300x200" alt="Placeholder">
+            <!-- For Mom Card with new image -->
+            <div class="idea-card" onclick="window.open('https://www.pinterest.com/search/pins/?q=holiday%20gifts%20for%20mom&rs=typed', '_blank')">
+                <img src="https://i.ibb.co/DL9ML4k/Screenshot-2024-12-11-at-11-21-46-AM.png" alt="For Mom">
                 <h3>For Mom</h3>
                 <p>Thoughtful gifts that will make her smile.</p>
             </div>
-            <div class="idea-card">
-                <img src="https://via.placeholder.com/300x200" alt="Placeholder">
+
+            <!-- For Dog Card with new image -->
+            <div class="idea-card" onclick="window.open('https://www.pinterest.com/search/pins/?q=holiday%20gifts%20for%20dog&rs=typed', '_blank')">
+                <img src="https://i.ibb.co/4s6ZCcP/Screenshot-2024-12-11-at-11-22-06-AM.png" alt="For Dog">
                 <h3>For Dog</h3>
                 <p>Adorable finds for your furry friend.</p>
             </div>
-            <div class="idea-card">
-                <img src="https://via.placeholder.com/300x200" alt="Placeholder">
+
+            <!-- For Dad Card with new image -->
+            <div class="idea-card" onclick="window.open('https://www.pinterest.com/search/pins/?q=holiday%20gifts%20for%20dad&rs=typed', '_blank')">
+                <img src="https://i.ibb.co/7Wnsf5S/placeholder-image.jpg" alt="For Dad">
                 <h3>For Dad</h3>
                 <p>Practical and fun gifts he will love.</p>
             </div>
-            <div class="idea-card">
-                <img src="https://via.placeholder.com/300x200" alt="Placeholder">
+
+            <!-- For Friends Card with new image -->
+            <div class="idea-card" onclick="window.open('https://www.pinterest.com/search/pins/?q=holiday%20gifts%20for%20friends&rs=typed', '_blank')">
+                <img src="https://i.ibb.co/QC9T7m6/Screenshot-2024-12-11-at-11-24-30-AM.png" alt="For Friends">
                 <h3>For Friends</h3>
                 <p>Unique ideas to cherish your friendships.</p>
             </div>
-            <div class="idea-card">
-                <img src="https://via.placeholder.com/300x200" alt="Placeholder">
+
+            <!-- For Kids Card with new image -->
+            <div class="idea-card" onclick="window.open('https://www.pinterest.com/search/pins/?q=holiday%20gifts%20for%20kids&rs=typed', '_blank')">
+                <img src="https://i.ibb.co/s6kf8YB/Screenshot-2024-12-11-at-11-24-03-AM.png" alt="For Kids">
                 <h3>For Kids</h3>
                 <p>Exciting and fun-filled surprises for kids.</p>
             </div>
-            <div class="idea-card">
-                <img src="https://via.placeholder.com/300x200" alt="Placeholder">
+
+            <!-- For Couples Card with new image -->
+            <div class="idea-card" onclick="window.open('https://www.pinterest.com/search/pins/?q=romantic%20holiday%20gifts&rs=typed', '_blank')">
+                <img src="https://i.ibb.co/chN14GW/Screenshot-2024-12-11-at-11-25-11-AM.png" alt="For Couples">
                 <h3>For Couples</h3>
                 <p>Romantic and meaningful gifts for two.</p>
             </div>
@@ -117,3 +135,5 @@
     </footer>
 </body>
 </html>
+
+
