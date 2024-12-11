@@ -6,7 +6,137 @@
     <link rel="stylesheet" href="style.css">
     <title>Gift Finder</title>
 </head>
+<style>
+    body {
+        font-family: 'Times New Roman', serif;
+        margin: 0;
+        padding: 0;
+        background-color: #4b6043;
+        color: #ffffff;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background-color: #ffffff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-bottom: 4px solid #4b6043;
+    }
+    header h1 {
+        font-size: 1.5rem;
+        color: #4b6043;
+    }
+    nav a {
+        margin-left: 1rem;
+        text-decoration: none;
+        color: #343a40;
+        font-weight: bold;
+    }
+    nav a:hover, nav a.active {
+        color: #ffffff;
+        background-color: #4b6043;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+    }
+    .inventory-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+    }
+    .search-bar {
+        position: relative;
+        width: 50%;
+        margin-bottom: 1rem;
+    }
+    .search-bar input {
+        width: 100%;
+        padding: 0.75rem;
+        border-radius: 20px;
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        font-size: 1rem;
+        outline: none;
+    }
+    .search-bar ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #ffffff;
+        color: #343a40;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-height: 150px;
+        overflow-y: auto;
+        display: none;
+    }
+    .search-bar ul li {
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+    .search-bar ul li:hover {
+        background: #75975e;
+        color: #ffffff;
+    }
+    .search-filter {
+        width: 50%;
+        margin-top: 1rem;
+        text-align: right;
+    }
+    .search-filter select {
+        padding: 0.5rem;
+        border-radius: 10px;
+        border: none;
+        font-size: 1rem;
+        outline: none;
+    }
+    .past-searches {
+        width: 50%;
+        margin-top: 2rem;
+    }
+    .past-searches h3 {
+        color: #b3cf99;
+    }
+    .past-searches ul {
+        list-style: none;
+        padding: 0;
+    }
+    .past-searches ul li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem 0;
+        border-bottom: 1px solid #75975e;
+    }
+    .past-searches ul li button {
+        background: #b3cf99;
+        color: #4b6043;
+        border: none;
+        padding: 0.3rem 0.5rem;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .past-searches ul li button:hover {
+        background: #75975e;
+        color: #ffffff;
+    }
+
+
+</style>
 <body>
+    <header>
+        <h1>Welcome to Gioia</h1>
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/get-ideas.html">Get Ideas</a>
+            <a href="index.html" class="active">Inventory</a>
+        </nav>
+    </header>
     <div class="container">
         <h1>Find the Perfect Gift</h1>
         <form id="giftForm">

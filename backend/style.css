@@ -1,10 +1,10 @@
 /* General Reset */
 body {
+    font-family: 'Times New Roman', serif;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: #4b6043;
+    color: #ffffff;
 }
 
 /* Container */
@@ -12,16 +12,19 @@ body {
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
-    background: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* background: #fff; */
     border-radius: 8px;
     text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Heading */
 h1 {
     margin-bottom: 20px;
-    color: #444;
+    color: white;
 }
 
 /* Form */
@@ -33,17 +36,18 @@ form {
 }
 
 textarea {
-    width: 100%;
-    height: 100px;
+    width: 1000px;
+    /* height: 100px; */
     padding: 10px;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     border-radius: 5px;
     font-size: 16px;
     resize: none;
+    text-align: center;
 }
 
 button {
-    background-color: #007bff;
+    background-color: #75975e;
     color: white;
     border: none;
     padding: 12px 20px;
@@ -54,7 +58,8 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: white;
+    color: black;
 }
 
 /* Gift Results Grid */
@@ -66,12 +71,13 @@ button:hover {
 
 .gift-card {
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 2px solid black;
     border-radius: 8px;
-    background: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: #75975e;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
     text-align: center;
     transition: transform 0.2s, box-shadow 0.2s;
+    margin: 10px;
 }
 
 .gift-card:hover {
@@ -81,7 +87,7 @@ button:hover {
 
 .gift-card a {
     text-decoration: none;
-    color: #007bff;
+    color: black;
     font-weight: bold;
 }
 
